@@ -52,7 +52,7 @@ I choose A with k=3. Its annual cost of $23471, which is less $27600. A with k=5
 
 ### 1e. Next measurement (at most 60 words)
 
-Should to add 100 more Kazakh test questions. And remeasure recall for A, k=3 and B, k=5. This would narrow the intervals enough to show whether A, k=3 truly beats B, k=5.
+I would add at least 100 more Kazakh test questions and re-measure recall for A, k=3 and B, k=5. This would narrow the intervals enough to show whether A, k=3 truly beats B, k=5.
 
 ## Part 2: A document pipeline you can defend
 
