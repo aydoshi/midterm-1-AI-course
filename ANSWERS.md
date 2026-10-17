@@ -46,13 +46,11 @@ I used these tools to support my understanding and progress through the assignme
 
 ### 1d. Decision (at most 150 words)
 
-Chosen candidate: A with k=3
-
 I choose A with k=3. Its annual cost of $23471. A with k=5 annual cost of $31651 exceeds it. A with k=3 recall is 0.80 (0.68–0.88), clearly above B with k=3 (0.47, 0.35–0.59): the intervals do not overlap. Against B with k=5 (0.72, 0.59–0.82) the intervals overlap, so no difference is shown. B with k=5 is cheaper $16633, but I prefer A with k=3 because the budget allows it and its recall estimate is higher. Recall of A with k=3 by language: EN 0.90 (18/20), RU 0.85 (17/20), KK 0.65 (13/20). Kazakh-speaking customers are served worst, and with only 20 questions that estimate is wide (0.43–0.82).
 
 ### 1e. Next measurement (at most 60 words)
 
-Should to add 100 more Kazakh test questions. And re-measure recall for A, k=3 and B, k=5. This would narrow the intervals enough to show whether A, k=3 truly beats B, k=5.
+Should to add 100 more Kazakh test questions. And remeasure recall for A, k=3 and B, k=5. This would narrow the intervals enough to show whether A, k=3 truly beats B, k=5.
 
 ## Part 2: A document pipeline you can defend
 
