@@ -46,9 +46,9 @@ I used these tools to support my understanding and progress through the assignme
 
 ### 1d. Decision (at most 150 words)
 
-Chosen candidate: A with k=3
+Chosen candidate: A, k=3
 
-I choose A with k=3. Its annual cost of $23471. A with k=5 annual cost of $31651 exceeds it. A with k=3 recall is 0.80 (0.68–0.88), clearly above B with k=3 (0.47, 0.35–0.59): the intervals do not overlap. Against B with k=5 (0.72, 0.59–0.82) the intervals overlap, so no difference is shown. B with k=5 is cheaper $16633, but I prefer A with k=3 because the budget allows it and its recall estimate is higher. Recall of A with k=3 by language: EN 0.90 (18/20), RU 0.85 (17/20), KK 0.65 (13/20). Kazakh-speaking customers are served worst, and with only 20 questions that estimate is wide (0.43–0.82).
+I choose A with k=3. Its annual cost of $23471, which is less $27600. A with k=5 annual cost of $31651 exceeds it. A with k=3 recall is 0.80 (0.68–0.88), clearly above B with k=3 (0.47, 0.35–0.59): the intervals do not overlap. Against B with k=5 (0.72, 0.59–0.82) the intervals overlap, so no difference is shown. B with k=5 is cheaper $16633, but I prefer A with k=3 because the budget allows it and its recall estimate is higher. Recall of A with k=3 by language: EN 0.90 (18/20), RU 0.85 (17/20), KK 0.65 (13/20). Kazakh-speaking customers are served worst, and with only 20 questions that estimate is wide (0.43–0.82).
 
 ### 1e. Next measurement (at most 60 words)
 
@@ -69,11 +69,16 @@ Personal-data pages per year sent abroad under H: 438000
 
 I recommend Pipeline L as the default for processing invoices containing personal data.
 
-Pipeline H has better overall accuracy: 88.89% compared to 85.00% for Pipeline L. But its least accurate cell, clean invoices in Kazakh, is 80.00% accurate. Pipeline L also has weakest-cell accuracy of 80.00% for degraded Kazakh-language invoices. The two weakest cells have the same 95% Wilson interval of 62.69%–90.50%. This indicates a high degree of uncertainty since there are only 30 test invoices per cell.
-Pipeline H costs $11899 a year, and pipeline L $14400. So, if you pick L, it costs an extra $2501 per year, or about 21% more than H. This enables documents to be processed on a server in Kazakhstan, rather than sending them to a hosted service abroad. Why does it matter ? There are about 438000 pages a year that have a person 's name and ИИН on it .
+Pipeline H has higher overall accuracy (88.89% vs 85.00% for L), but the 95% Wilson intervals overlap (83.5–92.7% vs 79.1–89.5%), so the difference is not shown. Its least accurate cell, clean invoices in Kazakh, is 80.00% accurate; Pipeline L's weakest cell, degraded Kazakh-language invoices, is also 80.00%. Both have the same 95% Wilson interval of 62.7%–90.5%, a high degree of uncertainty since there are only 30 test invoices per cell.
+
+Pipeline H costs $11899 a year and L $14400, so L costs an extra $2501 per year, about 21% more. In return, documents are processed on a server in Kazakhstan instead of a hosted service abroad. This matters because about 438000 pages a year carry a person's name and ИИН.
+
 Three questions about the scans. Where does a scan go? Under H, to a data centre abroad; under L, to our own server in Kazakhstan. Who stores it? Under H, the vendor, whose storage and subcontractors we must still find out; under L, the bank. For how long? Under H, unknown until the contract says; under L, the period we set.
+
 Verifiable safeguards for L: a written retention period, checked quarterly by random deletion tests; an access list and audit log, reviewed quarterly; human review of Kazakh and low-confidence scans, with monthly accuracy per language and condition.
+
 H could serve documents without personal data if the privacy and compliance teams approve external processing.
+
 Remaining risk: about one in five Kazakh invoices may still need correction, and a server we run ourselves must be secured by us.
 
 ## Part 3: Explain your own numbers
